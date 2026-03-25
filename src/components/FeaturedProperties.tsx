@@ -82,12 +82,12 @@ const FeaturedProperties = () => (
 
               {/* FOMO */}
               <div className="absolute bottom-4 left-4">
-                <span className="fomo-badge"><Clock className="w-3 h-3" />{property.fomo}</span>
+                <span className="fomo-badge"><Clock className="w-3.5 h-3.5" />{property.fomo}</span>
               </div>
 
               {/* Views */}
               <div className="absolute top-4 right-4 fomo-badge-brand">
-                <Eye className="w-3 h-3" />{property.views} views
+                <Eye className="w-3.5 h-3.5" />{property.views} views
               </div>
             </div>
 
