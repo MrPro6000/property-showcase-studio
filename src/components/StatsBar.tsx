@@ -31,13 +31,13 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
 };
 
 const StatsBar = () => (
-  <section className="relative z-10 -mt-16">
+  <section className="relative z-10 -mt-8 mb-8">
     <div className="max-w-6xl mx-auto px-6 md:px-12">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="glass-card p-8 md:p-12 grid grid-cols-2 md:grid-cols-4 gap-8"
+        className="glass-card p-8 md:p-14 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12"
       >
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
